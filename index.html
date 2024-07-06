@@ -7,26 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="playerInput">
         <h1>Spin the Bottle</h1>
-        <div id="playerInput">
-            <input type="text" id="playerName1" placeholder="Player 1 Name">
-            <input type="text" id="playerName2" placeholder="Player 2 Name">
-            <input type="text" id="playerName3" placeholder="Player 3 Name">
-            <input type="text" id="playerName4" placeholder="Player 4 Name">
-            <input type="text" id="playerName5" placeholder="Player 5 Name">
-            <button id="submitNamesButton">Submit Names</button>
+        <div class="input-container">
+            <input type="text" class="player-input" id="playerName1" placeholder="Player 1 Name">
+            <input type="text" class="player-input" id="playerName2" placeholder="Player 2 Name">
+            <input type="text" class="player-input" id="playerName3" placeholder="Player 3 Name">
+            <input type="text" class="player-input" id="playerName4" placeholder="Player 4 Name">
+            <input type="text" class="player-input" id="playerName5" placeholder="Player 5 Name">
         </div>
-        <div id="game" class="hidden">
+        <button class="button" id="submitNamesButton">Submit Names</button>
+    </div>
+
+    <div class="container hidden" id="game">
+        <div class="circle-container">
             <div class="circle" id="circle">
                 <div class="bottle-container">
                     <img src="bottle.png" id="bottle" alt="Bottle">
                 </div>
             </div>
-            <button id="startButton">Start</button>
-            <div id="consequence" class="hidden"></div>
         </div>
+        <button class="button" id="startButton">Spin the Bottle</button>
+        <div class="consequence hidden" id="consequence"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
